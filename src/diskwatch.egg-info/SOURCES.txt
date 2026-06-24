@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/diskwatch/__init__.py
+src/diskwatch/__main__.py
+src/diskwatch/diskwatch.py
+src/diskwatch.egg-info/PKG-INFO
+src/diskwatch.egg-info/SOURCES.txt
+src/diskwatch.egg-info/dependency_links.txt
+src/diskwatch.egg-info/entry_points.txt
+src/diskwatch.egg-info/requires.txt
+src/diskwatch.egg-info/top_level.txt

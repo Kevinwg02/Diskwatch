@@ -1,0 +1,18 @@
+services:
+  diskwatch-dev:
+    build: .
+    container_name: diskwatch-dev
+    image: diskwatch:dev
+    stdin_open: true
+    tty: true
+    volumes:
+      - /proc:/proc:ro
+      - /sys:/sys:ro
+      - /:/hostroot:ro
+      - /vault:/vault:ro
+      - ./app:/app:rw
+    privileged: true
+    environment:
+      - TERM=xterm-256color
+      - COLUMNS=220
+      - LINES=50
