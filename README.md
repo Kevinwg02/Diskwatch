@@ -1,6 +1,6 @@
 # DiskWatch 🖥️
 
-A Veeam-style TUI disk monitor for your Ubuntu server.  
+A TUI disk monitor for your Ubuntu server.  
 Navigate physical disks → partitions → folders, all in the terminal.
 
 ```
@@ -26,6 +26,9 @@ Navigate physical disks → partitions → folders, all in the terminal.
 ## Screens
 
 ```
+
+<img width="922" height="326" alt="image" src="https://github.com/user-attachments/assets/3351e0a0-7e0b-484b-a7e5-b406d7e8e662" />
+
 Main screen (physical disks)
  └─ Partition screen (partitions of the selected disk)
       └─ Folder browser (du-based folder tree)
@@ -40,6 +43,14 @@ Main screen (physical disks)
 - Docker + Docker Compose installed on your server
 
 ### Setup
+
+### **Installing on any server**
+
+- apt install pipx
+- pipx install diskwatch
+- diskwatch
+- source ~/.bashrc
+
 
 ```bash
 # 1. Clone / copy the project
