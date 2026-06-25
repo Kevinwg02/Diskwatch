@@ -23,9 +23,17 @@ Navigate physical disks → partitions → folders, all in the terminal.
 | `Esc` / `q` | Go back / Quit |
 | `r` | Refresh data |
 
-## Screens
 
-```
+
+
+### **Installing on any server**
+
+- apt install pipx
+- pipx install diskwatch
+- diskwatch
+- source ~/.bashrc
+  
+## Screens
 
 <img width="922" height="326" alt="image" src="https://github.com/user-attachments/assets/3351e0a0-7e0b-484b-a7e5-b406d7e8e662" />
 
@@ -33,7 +41,6 @@ Main screen (physical disks)
  └─ Partition screen (partitions of the selected disk)
       └─ Folder browser (du-based folder tree)
            └─ Sub-folder browser (navigate deeper)
-```
 
 ---
 
