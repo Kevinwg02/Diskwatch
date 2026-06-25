@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-DiskWatch - A Veeam-style TUI for disk usage monitoring
+DiskWatch - A TUI tool for disk sage monitoring
 """
 
 import os
@@ -257,7 +257,7 @@ class FolderBrowser(Screen):
 
             # Make a mini bar relative to disk total
             pct = (entry["size"] / self._disk["total"] * 100) if self._disk["total"] > 0 else 0
-            bar = usage_bar(min(pct * 5, 100), width=15)  # scale for visibility
+            bar = usage_bar(min(pct, 100), width=15)  # scale for visibility
 
             table.add_row(icon, entry["name"], size_str, bar, key=entry["path"])
 
